@@ -16,6 +16,8 @@
   font-family: var(--main-font), sans-serif;
   font-variation-settings: 'wght' var(--main-font-weight);
   font-weight: var(--main-font-weight);
+  color: var(--main-color);
+  background-color: var(--background-color);
 }
 
 .content-section {
@@ -29,8 +31,8 @@
   margin-block-start: 100px;
   padding-block-start: var(--header-padding-block-start);
   padding-block-end: var(--header-padding-block-end);
-  border: 2px solid currentColor;
-  background-color: #fff;
+  border: var(--border-size) solid currentColor;
+  background-color: var(--background-color);
   font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
 }
@@ -43,6 +45,89 @@
 .header__subtitle {
   margin-block-start: 20px;
   font-size: var(--title-font-size);
+  line-height: 1;
+}
+
+.cards {
+  display: grid;
+  gap: 50px;
+  margin-block-start: var(--section-block-start);
+}
+
+.card {
+  border: var(--border-size) solid currentColor;
+  background-color: var(--background-color);
+}
+
+.card__title {
+  padding: 3px 24px 5px 10px;
+  font-size: var(--card-title-font-size);
+  font-variation-settings: 'wght' var(--card-title-font-weight);
+  font-weight: var(--card-title-font-weight);
+  line-height: normal;
+}
+
+.card__image-wrapper {
+  border-block-start: var(--border-size) solid currentColor;
+  border-block-end: var(--border-size) solid currentColor;
+}
+
+.card__image {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.card__content {
+  display: grid;
+  gap: 27px;
+  padding: 25px;
+  font-size: var(--card-text-font-size);
+  line-height: var(--card-text-line-height);
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 6px;
+  padding-inline: 25px;
+  padding-block-end: 25px;
+}
+
+.card__icon-button {
+  display: grid;
+  place-items: center;
+  inline-size: 39px;
+  block-size: 38px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.like-icon {
+  display: block;
+  inline-size: 39px;
+  block-size: 36px;
+}
+
+.button {
+  border: var(--border-size) solid currentColor;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__like-button {
+  min-inline-size: 130px;
+  min-block-size: 38px;
+  padding: 0 17px;
+}
+
+.button__text {
+  font-family: var(--accent-font), fantasy;
+  font-size: var(--button-text-font-size);
   line-height: 1;
 }
 
