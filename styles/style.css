@@ -109,6 +109,38 @@
   object-fit: cover;
 }
 
+.card__image_filter-soft {
+  filter: brightness(0.95) contrast(1.1);
+}
+
+.card__image_filter-gray {
+  filter: grayscale(1);
+}
+
+.card__image_filter-contrast {
+  filter: contrast(1.45);
+}
+
+.card__image_filter-hue {
+  filter: hue-rotate(180deg);
+}
+
+.card__image_filter-saturate {
+  filter: saturate(2.6);
+}
+
+.card__image_filter-sepia {
+  filter: sepia(0.9);
+}
+
+.card__image_filter-blur {
+  filter: blur(2px);
+}
+
+.card__image_filter-memory {
+  filter: sepia(0.35) saturate(1.8) drop-shadow(10px 10px 14px rgb(255 0 0 / 0.35));
+}
+
 .card__content {
   display: grid;
   gap: 27px;
