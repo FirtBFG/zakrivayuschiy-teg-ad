@@ -33,6 +33,7 @@
     linear-gradient(to bottom, #e7e7e7 0 0.01%, #1a1a1a 100%);
   --dialog-inline-size: clamp(341px, 21rem + 1.07vw, 353px);
   --contour-color: var(--main-color);
+  --animation-fill-color: #f00;
   --core-color: transparent;
   --main-body-color: transparent;
   --sparks-color: transparent;
