@@ -16,6 +16,7 @@
   --card-text-font-size: 18px;
   --card-text-line-height: 21px;
   --button-text-font-size: 14px;
+  --button-text-color: #fff;
   --border-size: 2px;
   --label-stroke-color: #fff;
   --page-background:
@@ -31,4 +32,8 @@
     ),
     linear-gradient(to bottom, #e7e7e7 0 0.01%, #1a1a1a 100%);
   --dialog-inline-size: clamp(341px, 21rem + 1.07vw, 353px);
+  --contour-color: var(--main-color);
+  --core-color: transparent;
+  --main-body-color: transparent;
+  --sparks-color: transparent;
 }
