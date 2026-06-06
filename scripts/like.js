@@ -11,6 +11,9 @@
 const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
+const saveButton = document.querySelector('.save-button');
+const saveDialog = document.querySelector('.dialog');
+const dialogButton = document.querySelector('.dialog__button');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>
@@ -20,6 +23,10 @@ iconButtonArray.forEach((iconButton, index) => {
 likeButtonArray.forEach((button, index) => {
   button.onclick = () => toggleIsLiked(likeHeartArray[index], button);
 });
+
+saveButton.onclick = () => saveDialog.showModal();
+
+dialogButton.onclick = () => saveDialog.close();
 
 function toggleIsLiked(heart, button) {
   heart.classList.toggle('is-liked');
