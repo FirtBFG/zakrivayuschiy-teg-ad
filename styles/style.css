@@ -13,4 +13,41 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: 'wght' var(--main-font-weight);
+  font-weight: var(--main-font-weight);
+}
+
+.content-section {
+  inline-size: var(--content-inline-size);
+  margin-inline: auto;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  margin-block-start: 100px;
+  padding-block-start: var(--header-padding-block-start);
+  padding-block-end: var(--header-padding-block-end);
+  border: 2px solid currentColor;
+  background-color: #fff;
+  font-family: var(--accent-font), fantasy;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: var(--logo-font-size);
+  line-height: 1;
+}
+
+.header__subtitle {
+  margin-block-start: 20px;
+  font-size: var(--title-font-size);
+  line-height: 1;
+}
+
+@media (width <= 375px) {
+  .content-section {
+    inline-size: 100%;
+  }
 }
